@@ -7,7 +7,7 @@ This repository provides a comprehensive list of potential attacks on large lang
 1. **[Adversarial Examples](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/adversarial.md)**: Manipulating input data in a way that causes the model to make incorrect predictions, potentially leading to harmful decisions.
 2. **[Data Poisoning](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/data_poisoning.md)**: Injecting malicious data into the training set to corrupt the model's performance, causing it to behave incorrectly or make biased decisions.
 3. **[Model Inversion Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/model_inversion.md)**: Inferring the input values that were used to train the model, potentially exposing sensitive information.
-4. **Membership Inference Attacks**: Determining whether a specific data point was part of the model's training set, which can lead to privacy breaches.
+4. **[Membership Inference Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/membership_inference.md)**: Determining whether a specific data point was part of the model's training set, which can lead to privacy breaches.
 5. **Query Manipulation Attacks**: Crafting malicious queries that cause the model to reveal unintended information or behave in an undesired manner.
 
 ## Moderately Likely and Severe (6-12)
