@@ -1,4 +1,4 @@
-# Large Language Model (LLM) Attacks
+# Large Language Model (LLM) Attacks - Wiki
 
 This repository provides a comprehensive list of potential attacks on large language models (LLMs). These attacks are categorized based on their likelihood and severity, ranging from highly likely and severe to extremely rare and least severe.
 
