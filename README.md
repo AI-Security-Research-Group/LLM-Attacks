@@ -1,6 +1,6 @@
 # 🔒 Large Language Model (LLM) Attacks - Wiki
 
-Welcome to the ultimate guide on potential attacks targeting Large Language Models (LLMs)! This repository offers a comprehensive list of vulnerabilities, neatly categorized by their likelihood and severity. Stay ahead of the curve by understanding and mitigating these threats.
+Welcome to the ultimate wiki on potential attacks targeting Large Language Models (LLMs)! This repository offers a comprehensive list of vulnerabilities, neatly categorized by their likelihood and severity. Stay ahead of the curve by understanding and mitigating these threats.
 
 ## 🚨 Highly Likely and Severe (1-5)
 
