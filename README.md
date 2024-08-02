@@ -1,4 +1,4 @@
-# LLM Attacks and Descriptions
+# LLM Attacks
 
 | SN | Attack | Description |
 | --- | --- | --- |
