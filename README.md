@@ -4,11 +4,11 @@ Welcome to the ultimate wiki on potential attacks targeting Large Language Model
 
 ## 🚨 Highly Likely and Severe (1-5)
 
-1. **[Adversarial Examples](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/adversarial.md)**: Crafty manipulations of input data that trick models into making incorrect predictions, potentially leading to harmful decisions.
-2. **[Data Poisoning](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/data_poisoning.md)**: Malicious data injections into the training set that corrupt the model's performance, causing biased or incorrect behavior.
-3. **[Model Inversion Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/model_inversion.md)**: Inferring the input values used to train the model, exposing sensitive information.
-4. **[Membership Inference Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/membership_inference.md)**: Determining whether specific data points were part of the model's training set, leading to privacy breaches.
-5. **[Query Manipulation Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/Query_Manipulation_Attacks.md)**: Crafting malicious queries that cause the model to reveal unintended information or behave undesirably.
+1. **[Adversarial Examples](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/adversarial.md)**: Crafty manipulations of input data that trick models into making incorrect predictions, potentially leading to harmful decisions.
+2. **[Data Poisoning](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/data_poisoning.md)**: Malicious data injections into the training set that corrupt the model's performance, causing biased or incorrect behavior.
+3. **[Model Inversion Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/model_inversion.md)**: Inferring the input values used to train the model, exposing sensitive information.
+4. **[Membership Inference Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/membership_inference.md)**: Determining whether specific data points were part of the model's training set, leading to privacy breaches.
+5. **[Query Manipulation Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/Query_Manipulation_Attacks.md)**: Crafting malicious queries that cause the model to reveal unintended information or behave undesirably.
 
 ## ⚠️ Moderately Likely and Severe (6-12)
 
