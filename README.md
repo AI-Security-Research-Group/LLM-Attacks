@@ -1,4 +1,4 @@
-# LLM Attacks
+# LLM Attacks - Wiki
 
 | SN | Attack | Description |
 | --- | --- | --- |
