@@ -52,6 +52,8 @@ An attacker could inject images with a specific pattern (e.g., a sticker) into t
 - **Tools**: 
   - [SecML](https://github.com/pralab/secml): A Python library for the security evaluation of machine learning algorithms.
   - [Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox): A Python library for machine learning security.
+- **CTF**:
+  - [Data Poisoning CTF](https://github.com/AI-Security-Research-Group/Data-Poisoning-CTF)
 
 ## Conclusion
 Data poisoning is a significant threat to the integrity and reliability of machine learning models. By understanding and implementing protective measures, it is possible to mitigate the risks associated with this type of attack and ensure the robustness of AI systems.
