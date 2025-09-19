@@ -4,6 +4,16 @@ description: A comprehensive database of Large Language Model (LLM) attack vecto
 layout: default
 ---
 
+<div align="center">
+  <img src="assets/llm-attacks-mindmap.svg" alt="LLM Attacks Mind Map" style="max-width: 100%; height: auto; margin: 20px 0;">
+  
+  <h1><strong>🛡️ LLM Security Attack Database</strong></h1>
+  
+  <p><em>Your comprehensive guide to Large Language Model vulnerabilities and defense strategies</em></p>
+  
+  <hr style="width: 60%; margin: 20px auto;">
+</div>
+
 # LLM Attacks - Wiki
 
 A comprehensive collection of attack vectors and security vulnerabilities targeting Large Language Models (LLMs) and associated AI systems.
@@ -11,7 +21,7 @@ A comprehensive collection of attack vectors and security vulnerabilities target
 ## Attack Database
 
 | SN | Attack | Description |
-|----|--------|--------------|
+|----|--------|------------------------------|
 | 1 | Agentic Multi-Agent Exploitation | Exploiting inter-agent trust boundaries so that a malicious payload, initially rejected by one LLM agent, is processed if delivered via another trusted agent, including privilege escalation and cross-agent command execution. |
 | 2 | RAG/Embedding Backdoor Attacks | Attacking LLMs with manipulated embedded documents retrieved during RAG, including poisoning vector DBs to force undesirable completions or disclosures. |
 | 3 | System Prompt Leakage & Reverse Engineering | Forcing disclosure or deducing proprietary system prompts to subvert guardrails and expose internal instructions. |
