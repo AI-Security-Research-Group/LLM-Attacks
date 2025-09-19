@@ -6,6 +6,12 @@ bookToc: true
 
 # Adversarial Examples
 
+<div style="display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap;">
+  <span style="background: #fee2e2; color: #dc2626; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">High Risk</span>
+  <span style="background: #dbeafe; color: #2563eb; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Inference-Time</span>
+  <span style="background: #f3f4f6; color: #6b7280; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Active Research</span>
+</div>
+
 ## Overview
 Adversarial examples are inputs to machine learning models that an attacker has intentionally designed to cause the model to make a mistake. These inputs are often imperceptible to humans but can significantly alter the model's predictions. Adversarial examples exploit the weaknesses in a model's understanding, leading to incorrect and often harmful decisions.
 
@@ -32,14 +38,39 @@ To determine if your models are vulnerable to adversarial examples, consider the
 2. **Adversarial Training**: Include adversarial examples in the training process and observe if the model's performance improves against such inputs.
 3. **Audit and Penetration Testing**: Regularly audit your AI systems with adversarial testing tools and frameworks.
 
-## How to Protect from Vulnerability
-Protecting models from adversarial examples requires a combination of strategies:
+## Mitigation Strategies
 
-1. **Adversarial Training**: Train models using a mix of regular and adversarial examples to improve robustness.
-2. **Defensive Distillation**: Use distillation techniques to make the model more resistant to adversarial perturbations.
-3. **Input Sanitization**: Preprocess inputs to remove or mitigate adversarial noise.
-4. **Model Ensemble**: Use multiple models to make decisions, reducing the likelihood that all models will be deceived by the same adversarial example.
-5. **Detection Mechanisms**: Implement systems to detect and reject adversarial inputs before they are processed by the model.
+<div style="display: grid; gap: 1rem; margin: 1rem 0;">
+  <details style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem;">
+    <summary style="cursor: pointer; font-weight: 600; color: #2563eb;">🛡️ Adversarial Training</summary>
+    <p style="margin-top: 0.5rem; color: #6b7280;">Train models using a mix of regular and adversarial examples to improve robustness.</p>
+  </details>
+
+  <details style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem;">
+    <summary style="cursor: pointer; font-weight: 600; color: #2563eb;">🔬 Defensive Distillation</summary>
+    <p style="margin-top: 0.5rem; color: #6b7280;">Use distillation techniques to make the model more resistant to adversarial perturbations.</p>
+  </details>
+
+  <details style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem;">
+    <summary style="cursor: pointer; font-weight: 600; color: #2563eb;">🧹 Input Sanitization</summary>
+    <p style="margin-top: 0.5rem; color: #6b7280;">Preprocess inputs to remove or mitigate adversarial noise.</p>
+  </details>
+
+  <details style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem;">
+    <summary style="cursor: pointer; font-weight: 600; color: #2563eb;">🎯 Model Ensemble</summary>
+    <p style="margin-top: 0.5rem; color: #6b7280;">Use multiple models to make decisions, reducing the likelihood that all models will be deceived by the same adversarial example.</p>
+  </details>
+
+  <details style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem;">
+    <summary style="cursor: pointer; font-weight: 600; color: #2563eb;">🔍 Detection Mechanisms</summary>
+    <p style="margin-top: 0.5rem; color: #6b7280;">Implement systems to detect and reject adversarial inputs before they are processed by the model.</p>
+  </details>
+</div>
+
+### 💼 Enterprise Solutions
+<div style="background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem; margin: 1rem 0;">
+  <p style="color: #6b7280; margin: 0;">Looking for enterprise-grade protection? <a href="#sponsors" style="color: #2563eb;">View our partner solutions →</a></p>
+</div>
 
 ## Additional Resources
 - **Papers**: 

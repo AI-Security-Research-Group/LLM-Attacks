@@ -1,4 +1,4 @@
-/* Custom CSS for LLM Attacks Documentation */
+/* Minimalist Interactive Knowledge Base */
 
 :root {
   --primary-color: #2563eb;
@@ -12,6 +12,26 @@
   --border-color: #e5e7eb;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Interactive elements */
+a:hover {
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+details summary:hover {
+  background: var(--light-bg);
+}
+
+input:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Smooth animations */
+* {
+  transition: all 0.2s ease;
 }
 
 /* Enhanced Typography */

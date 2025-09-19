@@ -1,61 +1,47 @@
 ---
-title: "LLM Attacks - Comprehensive Security Vulnerability Database"
+title: "LLM Attacks"
 type: docs
 bookToc: false
 ---
 
-<div class="hero-section" style="background: linear-gradient(135deg, #2563eb, #059669); color: white; padding: 3rem 2rem; border-radius: 1rem; margin-bottom: 2rem; text-align: center;">
-  <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;">🛡️ LLM Attacks</h1>
-  <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Comprehensive Security Vulnerability Database</p>
-  <p style="font-size: 1.1rem; opacity: 0.8; max-width: 600px; margin: 0 auto;">The most comprehensive collection of attack vectors and security vulnerabilities targeting Large Language Models (LLMs) and associated AI systems.</p>
+<div style="text-align: center; padding: 4rem 2rem;">
+  <h1 style="font-size: 4rem; margin: 0;">🛡️</h1>
+  <h2 style="font-size: 2rem; margin: 1rem 0; color: #2563eb;">LLM Attacks</h2>
+  <p style="color: #6b7280; max-width: 500px; margin: 0 auto;">Interactive knowledge base for LLM security vulnerabilities</p>
 </div>
 
-<div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-  <div class="stat-card" style="background: #dbeafe; padding: 1.5rem; border-radius: 0.75rem; text-align: center; border-left: 4px solid #2563eb;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #2563eb;">71</div>
-    <div style="color: #1e40af; font-weight: 600;">Attack Types</div>
+<div style="display: flex; justify-content: center; gap: 3rem; margin: 3rem 0; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <div style="font-size: 3rem; color: #2563eb;">71</div>
+    <div style="color: #6b7280;">attacks</div>
   </div>
-  <div class="stat-card" style="background: #d1fae5; padding: 1.5rem; border-radius: 0.75rem; text-align: center; border-left: 4px solid #059669;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #059669;">8</div>
-    <div style="color: #065f46; font-weight: 600;">Categories</div>
+  <div style="text-align: center;">
+    <div style="font-size: 3rem; color: #059669;">8</div>
+    <div style="color: #6b7280;">categories</div>
   </div>
-  <div class="stat-card" style="background: #fee2e2; padding: 1.5rem; border-radius: 0.75rem; text-align: center; border-left: 4px solid #dc2626;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #dc2626;">4</div>
-    <div style="color: #991b1b; font-weight: 600;">Risk Levels</div>
-  </div>
-  <div class="stat-card" style="background: #fef3c7; padding: 1.5rem; border-radius: 0.75rem; text-align: center; border-left: 4px solid #d97706;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #d97706;">5</div>
-    <div style="color: #92400e; font-weight: 600;">Detailed Guides</div>
+  <div style="text-align: center;">
+    <div style="font-size: 3rem; color: #dc2626;">4</div>
+    <div style="color: #6b7280;">risk levels</div>
   </div>
 </div>
 
-<div class="alert alert-warning" style="margin: 2rem 0; padding: 1rem 1.5rem; border-radius: 0.75rem; background: #fef3c7; border-left: 4px solid #d97706; color: #92400e;">
-  <strong>⚠️ Disclaimer:</strong> This information is provided for educational and defensive purposes only. Do not use this information for malicious activities.
+<div style="text-align: center; margin: 3rem 0;">
+  <input type="text" id="search" placeholder="Search attacks..." style="padding: 1rem; width: 100%; max-width: 500px; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem;" />
 </div>
 
-## 🚀 Quick Navigation
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-  <div class="nav-card" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease;">
-    <h3 style="color: #2563eb; margin-bottom: 1rem;">🔍 Attack Types</h3>
-    <p style="color: #6b7280; margin-bottom: 1rem;">Detailed documentation for each attack type with examples and mitigation strategies.</p>
-    <a href="/attacks/" class="btn" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: 500;">Explore Attacks →</a>
-  </div>
-
-  <div class="nav-card" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease;">
-    <h3 style="color: #059669; margin-bottom: 1rem;">📊 Attack Database</h3>
-    <p style="color: #6b7280; margin-bottom: 1rem;">Complete taxonomy of all 71 documented attacks organized by category.</p>
-    <a href="#attack-database" class="btn" style="display: inline-block; padding: 0.75rem 1.5rem; background: #059669; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: 500;">View Database →</a>
-  </div>
-
-  <div class="nav-card" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease;">
-    <h3 style="color: #dc2626; margin-bottom: 1rem;">🤝 Contributing</h3>
-    <p style="color: #6b7280; margin-bottom: 1rem;">Help expand this database by contributing new attacks and improvements.</p>
-    <a href="https://github.com/AI-Security-Research-Group/LLM-Attacks" class="btn" style="display: inline-block; padding: 0.75rem 1.5rem; background: #dc2626; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: 500;">Contribute →</a>
-  </div>
+<div style="display: flex; justify-content: center; gap: 2rem; margin: 3rem 0; flex-wrap: wrap;">
+  <a href="/LLM-Attacks/attacks/" style="color: #2563eb; text-decoration: none; padding: 1rem 2rem; border: 1px solid #2563eb; border-radius: 0.5rem; transition: all 0.2s;">
+    Browse Attacks
+  </a>
+  <a href="#database" style="color: #059669; text-decoration: none; padding: 1rem 2rem; border: 1px solid #059669; border-radius: 0.5rem; transition: all 0.2s;">
+    View Database
+  </a>
+  <a href="https://github.com/AI-Security-Research-Group/LLM-Attacks" style="color: #6b7280; text-decoration: none; padding: 1rem 2rem; border: 1px solid #6b7280; border-radius: 0.5rem; transition: all 0.2s;">
+    Contribute
+  </a>
 </div>
 
-## 📊 Attack Database
+## Database {#database}
 
 | SN  | Attack                                                                                                                  | Category        | Risk Level | Description                                                                                                                                                                                                                                            |
 |-----|-------------------------------------------------------------------------------------------------------------------------|-----------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
