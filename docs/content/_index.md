@@ -19,6 +19,10 @@ bookToc: false
     <div style="font-size: 2.5rem; font-weight: bold; color: #059669;">8</div>
     <div style="color: #065f46; font-weight: 600;">Categories</div>
   </div>
+  <div class="stat-card" style="background: #fee2e2; padding: 1.5rem; border-radius: 0.75rem; text-align: center; border-left: 4px solid #dc2626;">
+    <div style="font-size: 2.5rem; font-weight: bold; color: #dc2626;">4</div>
+    <div style="color: #991b1b; font-weight: 600;">Risk Levels</div>
+  </div>
   <div class="stat-card" style="background: #fef3c7; padding: 1.5rem; border-radius: 0.75rem; text-align: center; border-left: 4px solid #d97706;">
     <div style="font-size: 2.5rem; font-weight: bold; color: #d97706;">5</div>
     <div style="color: #92400e; font-weight: 600;">Detailed Guides</div>

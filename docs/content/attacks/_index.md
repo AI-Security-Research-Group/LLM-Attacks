@@ -69,27 +69,67 @@ bookCollapseSection: false
 
 </div>
 
-## 📈 Attack Categories Overview
+## 📈 Improved Attack Classification System
 
 <div style="background: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; border-left: 4px solid #2563eb; margin: 2rem 0;">
-  <h3 style="color: #2563eb; margin-bottom: 1rem;">🏷️ Attack Classification</h3>
-  <p style="color: #6b7280; margin-bottom: 1rem;">Our comprehensive database categorizes attacks into 8 main categories:</p>
+  <h3 style="color: #2563eb; margin-bottom: 1rem;">🏷️ Attack Categories</h3>
+  <p style="color: #6b7280; margin-bottom: 1rem;">Our improved taxonomy categorizes attacks based on <strong>attack vector</strong> and <strong>target layer</strong>:</p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #2563eb;">
+      <div style="font-weight: 600; color: #2563eb;">🏗️ Training-Time</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Model development phase</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #dc2626;">
+      <div style="font-weight: 600; color: #dc2626;">⚡ Inference-Time</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Model usage phase</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #059669;">
+      <div style="font-weight: 600; color: #059669;">💬 Prompt-Based</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Crafted inputs</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #7c3aed;">
+      <div style="font-weight: 600; color: #7c3aed;">🔒 Privacy</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Information extraction</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #d97706;">
+      <div style="font-weight: 600; color: #d97706;">🏢 System-Level</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Infrastructure attacks</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #0891b2;">
+      <div style="font-weight: 600; color: #0891b2;">🔄 Model-Centric</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Direct model targeting</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #16a34a;">
+      <div style="font-weight: 600; color: #16a34a;">📊 Data-Centric</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Data integrity attacks</div>
+    </div>
+    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #ea580c;">
+      <div style="font-weight: 600; color: #ea580c;">🔗 Supply Chain</div>
+      <div style="font-size: 0.875rem; color: #6b7280;">Pipeline attacks</div>
+    </div>
+  </div>
+</div>
+
+## 🎯 Risk Level Classification
+
+<div style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; margin: 2rem 0;">
+  <h3 style="color: #2563eb; margin-bottom: 1rem;">⚠️ Risk Assessment Framework</h3>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center;">
-      <div style="font-weight: 600; color: #2563eb;">Agentic AI</div>
-      <div style="font-size: 0.875rem; color: #6b7280;">Multi-agent exploits</div>
+    <div style="background: #fee2e2; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #dc2626;">
+      <div style="font-weight: 600; color: #dc2626;">🔴 Critical</div>
+      <div style="font-size: 0.875rem; color: #991b1b;">Severe damage potential</div>
     </div>
-    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center;">
-      <div style="font-weight: 600; color: #dc2626;">Foundational</div>
-      <div style="font-size: 0.875rem; color: #6b7280;">Core model attacks</div>
+    <div style="background: #fed7aa; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #ea580c;">
+      <div style="font-weight: 600; color: #ea580c;">🟠 High</div>
+      <div style="font-size: 0.875rem; color: #9a3412;">Significant impact</div>
     </div>
-    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center;">
-      <div style="font-weight: 600; color: #059669;">Privacy</div>
-      <div style="font-size: 0.875rem; color: #6b7280;">Data inference</div>
+    <div style="background: #fef3c7; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #d97706;">
+      <div style="font-weight: 600; color: #d97706;">🟡 Medium</div>
+      <div style="font-size: 0.875rem; color: #92400e;">Moderate impact</div>
     </div>
-    <div style="background: white; padding: 1rem; border-radius: 0.5rem; text-align: center;">
-      <div style="font-weight: 600; color: #d97706;">Prompt-Based</div>
-      <div style="font-size: 0.875rem; color: #6b7280;">Input manipulation</div>
+    <div style="background: #d1fae5; padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 3px solid #059669;">
+      <div style="font-weight: 600; color: #059669;">🟢 Low</div>
+      <div style="font-size: 0.875rem; color: #065f46;">Limited impact</div>
     </div>
   </div>
 </div>
