@@ -1,0 +1,40 @@
+baseURL = 'https://ai-security-research-group.github.io/LLM-Attacks'
+languageCode = 'en-us'
+title = 'LLM Attacks - Comprehensive Security Vulnerability Database'
+theme = 'hugo-book'
+
+[params]
+  # Book configuration
+  BookRepo = 'https://github.com/AI-Security-Research-Group/LLM-Attacks'
+  BookEditPage = true
+  BookSearch = true
+  BookSection = '*'
+  BookMenuBundle = '/menu'
+  BookCollapseSection = false
+  BookComments = false
+  BookPortableLinks = true
+  BookServiceWorker = true
+  BookTranslationLanguages = false
+  BookDateFormat = 'January 2, 2006'
+  BookToC = true
+  BookFlatSection = false
+  BookLogo = '/logo.png'
+
+[menu]
+  # Configure navigation menu
+  [[menu.before]]
+    name = "GitHub"
+    url = "https://github.com/AI-Security-Research-Group/LLM-Attacks"
+    weight = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+
+# Enable syntax highlighting
+[markup.highlight]
+  style = 'github'
+  lineNos = true

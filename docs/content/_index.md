@@ -1,20 +1,14 @@
 ---
-title: LLM Attacks - Comprehensive Security Vulnerability Database
-description: A comprehensive database of Large Language Model (LLM) attack vectors and security vulnerabilities, including the latest 2025 research on agentic exploits, RAG attacks, and advanced ML security threats.
-layout: default
+title: "LLM Attacks - Comprehensive Security Vulnerability Database"
+type: docs
+bookToc: false
 ---
 
-<div align="center">
-  <img src="assets/llm-attacks-mindmap.svg" alt="LLM Attacks Mind Map" style="max-width: 100%; height: auto; margin: 20px 0;">
-  
-  <h1><strong>🛡️ LLM Security Attack Database</strong></h1>
-  
-  <p><em>Your comprehensive guide to Large Language Model vulnerabilities and defense strategies</em></p>
-  
-  <hr style="width: 60%; margin: 20px auto;">
-</div>
+# 🛡️ LLM Security Attack Database
 
-# LLM Attacks - Wiki
+*Your comprehensive guide to Large Language Model vulnerabilities and defense strategies*
+
+---
 
 A comprehensive collection of attack vectors and security vulnerabilities targeting Large Language Models (LLMs) and associated AI systems.
 
@@ -30,11 +24,11 @@ A comprehensive collection of attack vectors and security vulnerabilities target
 | 6 | Unbounded Resource Consumption ("Denial of Wallet") | Manipulating LLM behavior to consume excessive external/cloud resources, raising costs or disrupting operations. |
 | 7 | Cross-Context Federation Leaks | Leveraging federated information contexts or cross-source retrievals to exfiltrate data by manipulating the model's knowledge context. |
 | 8 | Vector Database Poisoning | Polluting indexing/embedding layers to disrupt or manipulate downstream LLM generations or leak/hallucinate info. |
-| 9 | [Adversarial Examples](../attacks_list/adversarial.md) | Crafty manipulations of input data that trick models into making incorrect predictions, potentially leading to harmful decisions. |
-| 10 | [Data Poisoning](../attacks_list/data_poisoning.md) | Malicious data injections into the training set that corrupt the model's performance, causing biased or incorrect behavior. |
-| 11 | [Model Inversion Attacks](../attacks_list/model_inversion.md) | Inferring the input values used to train the model, exposing sensitive information. |
-| 12 | [Membership Inference Attacks](../attacks_list/membership_inference.md) | Determining whether specific data points were part of the model's training set, leading to privacy breaches. |
-| 13 | [Query Manipulation Attacks](../attacks_list/Query_Manipulation_Attacks.md) | Crafting malicious queries that cause the model to reveal unintended information or behave undesirably. |
+| 9 | [Adversarial Examples](attacks/adversarial) | Crafty manipulations of input data that trick models into making incorrect predictions, potentially leading to harmful decisions. |
+| 10 | [Data Poisoning](attacks/data-poisoning) | Malicious data injections into the training set that corrupt the model's performance, causing biased or incorrect behavior. |
+| 11 | [Model Inversion Attacks](attacks/model-inversion) | Inferring the input values used to train the model, exposing sensitive information. |
+| 12 | [Membership Inference Attacks](attacks/membership-inference) | Determining whether specific data points were part of the model's training set, leading to privacy breaches. |
+| 13 | [Query Manipulation Attacks](attacks/query-manipulation) | Crafting malicious queries that cause the model to reveal unintended information or behave undesirably. |
 | 14 | Model Extraction Attacks | Reverse-engineering the model by querying it to construct a copy, resulting in intellectual property theft. |
 | 15 | Transfer Learning Attacks | Exploiting vulnerabilities in the transfer learning process to manipulate model performance on new tasks. |
 | 16 | Federated Learning Attacks | Compromising client devices or server-side data in federated learning setups to corrupt the global model or extract sensitive information. |
@@ -80,4 +74,4 @@ Contribute if you come across any new vulnerabilities that are not on this list.
 
 ## License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](../LICENSE) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](https://github.com/AI-Security-Research-Group/LLM-Attacks/blob/main/LICENSE) file for details.

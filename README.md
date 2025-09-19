@@ -1,4 +1,20 @@
-# LLM Attacks - Wiki
+# 🛡️ LLM Attacks - Comprehensive Security Vulnerability Database
+
+[![Deploy Hugo site to Pages](https://github.com/AI-Security-Research-Group/LLM-Attacks/actions/workflows/hugo.yml/badge.svg)](https://github.com/AI-Security-Research-Group/LLM-Attacks/actions/workflows/hugo.yml)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+> **📖 [View the full documentation site →](https://ai-security-research-group.github.io/LLM-Attacks/)**
+
+A comprehensive collection of attack vectors and security vulnerabilities targeting Large Language Models (LLMs) and associated AI systems.
+
+## 🚀 Quick Links
+
+- **[📚 Documentation Site](https://ai-security-research-group.github.io/LLM-Attacks/)** - Complete documentation with detailed attack descriptions
+- **[🔍 Attack Types](https://ai-security-research-group.github.io/LLM-Attacks/attacks/)** - Detailed documentation for each attack type
+- **[🤝 Contributing](#contributing)** - How to contribute to this project
+
+## 📊 Attack Database Overview
+
 | SN | Attack | Description |
 | --- | --- | --- |
 | 1 | Agentic Multi-Agent Exploitation | Exploiting inter-agent trust boundaries so that a malicious payload, initially rejected by one LLM agent, is processed if delivered via another trusted agent, including privilege escalation and cross-agent command execution. |
@@ -9,11 +25,11 @@
 | 6 | Unbounded Resource Consumption ("Denial of Wallet") | Manipulating LLM behavior to consume excessive external/cloud resources, raising costs or disrupting operations. |
 | 7 | Cross-Context Federation Leaks | Leveraging federated information contexts or cross-source retrievals to exfiltrate data by manipulating the model's knowledge context. |
 | 8 | Vector Database Poisoning | Polluting indexing/embedding layers to disrupt or manipulate downstream LLM generations or leak/hallucinate info. |
-| 9 | [Adversarial Examples](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/adversarial.md) | Crafty manipulations of input data that trick models into making incorrect predictions, potentially leading to harmful decisions. |
-| 10 | [Data Poisoning](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/data_poisoning.md) | Malicious data injections into the training set that corrupt the model's performance, causing biased or incorrect behavior. |
-| 11 | [Model Inversion Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/model_inversion.md) | Inferring the input values used to train the model, exposing sensitive information. |
-| 12 | [Membership Inference Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/membership_inference.md) | Determining whether specific data points were part of the model's training set, leading to privacy breaches. |
-| 13 | [Query Manipulation Attacks](https://github.com/AI-Security-Research-Group/llm-attacks/blob/main/attacks_list/Query_Manipulation_Attacks.md) | Crafting malicious queries that cause the model to reveal unintended information or behave undesirably. |
+| 9 | [Adversarial Examples](https://ai-security-research-group.github.io/LLM-Attacks/attacks/adversarial/) | Crafty manipulations of input data that trick models into making incorrect predictions, potentially leading to harmful decisions. |
+| 10 | [Data Poisoning](https://ai-security-research-group.github.io/LLM-Attacks/attacks/data-poisoning/) | Malicious data injections into the training set that corrupt the model's performance, causing biased or incorrect behavior. |
+| 11 | [Model Inversion Attacks](https://ai-security-research-group.github.io/LLM-Attacks/attacks/model-inversion/) | Inferring the input values used to train the model, exposing sensitive information. |
+| 12 | [Membership Inference Attacks](https://ai-security-research-group.github.io/LLM-Attacks/attacks/membership-inference/) | Determining whether specific data points were part of the model's training set, leading to privacy breaches. |
+| 13 | [Query Manipulation Attacks](https://ai-security-research-group.github.io/LLM-Attacks/attacks/query-manipulation/) | Crafting malicious queries that cause the model to reveal unintended information or behave undesirably. |
 | 14 | Model Extraction Attacks | Reverse-engineering the model by querying it to construct a copy, resulting in intellectual property theft. |
 | 15 | Transfer Learning Attacks | Exploiting vulnerabilities in the transfer learning process to manipulate model performance on new tasks. |
 | 16 | Federated Learning Attacks | Compromising client devices or server-side data in federated learning setups to corrupt the global model or extract sensitive information. |
@@ -52,3 +68,69 @@
 | 49 | Model Update Attacks | Manipulating the model during its update process to introduce vulnerabilities. |
 | 50 | Gradient Inversion Attacks | Reconstructing training data by exploiting gradients in federated learning. |
 | 51 | Side-Channel Timing Attacks | Inferring model parameters or training data by measuring computation times during inference. |
+
+## 🏗️ Documentation Site
+
+This repository includes a comprehensive documentation site built with Hugo. The site provides detailed information about each attack type, including:
+
+- **Overview and Description** - Understanding the attack mechanism
+- **Attack Types and Variations** - Different approaches and techniques
+- **Vulnerability Assessment** - How to determine if you're vulnerable
+- **Protection Strategies** - Mitigation and defense techniques
+- **Real-world Examples** - Practical attack scenarios
+- **Additional Resources** - Tools, papers, and CTF challenges
+
+### Local Development
+
+To run the documentation site locally:
+
+```bash
+cd docs
+hugo server --buildDrafts
+```
+
+Visit `http://localhost:1313/LLM-Attacks/` to view the site.
+
+## 🤝 Contributing
+
+We welcome contributions to expand and improve this attack database! Here's how you can help:
+
+### Adding New Attacks
+
+1. **Fork this repository**
+2. **Create a new attack documentation file** in `docs/content/attacks/`
+3. **Follow the existing format** with proper front matter and sections
+4. **Update the main attack table** in both README.md and `docs/content/_index.md`
+5. **Submit a pull request** with a clear description
+
+### Improving Existing Content
+
+- Fix typos or improve clarity
+- Add new examples or case studies
+- Update protection strategies
+- Add relevant tools or resources
+
+### Documentation Structure
+
+Each attack documentation should include:
+- Overview and description
+- Key characteristics
+- Attack types/variations
+- Vulnerability assessment methods
+- Protection strategies
+- Examples
+- Additional resources
+
+## 📄 License
+
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Contributors to the AI Security Research Group
+- Security researchers and practitioners who have documented these attacks
+- The open-source community for tools and frameworks
+
+---
+
+**⚠️ Disclaimer**: This information is provided for educational and defensive purposes only. Do not use this information for malicious activities.
