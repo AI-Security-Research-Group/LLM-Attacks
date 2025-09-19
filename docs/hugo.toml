@@ -18,7 +18,17 @@ theme = 'hugo-book'
   BookDateFormat = 'January 2, 2006'
   BookToC = true
   BookFlatSection = false
-  BookLogo = '/logo.png'
+
+  # Enhanced visual configuration
+  BookTheme = 'auto'
+  BookMenuBundleOrSection = 'menu'
+  BookDisplayTitle = true
+  BookLogo = '/images/logo.svg'
+  BookFavicon = '/images/favicon.ico'
+
+  # Custom styling
+  BookCustomCSS = ['css/custom.css']
+  BookCustomJS = ['js/custom.js']
 
 [menu]
   # Configure navigation menu
