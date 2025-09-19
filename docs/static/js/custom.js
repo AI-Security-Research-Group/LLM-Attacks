@@ -1,18 +1,75 @@
 // Custom JavaScript for LLM Attacks Documentation
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Simple search functionality
+    // Enhanced search functionality with highlighting
     const searchInput = document.getElementById('search');
     if (searchInput) {
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            const rows = document.querySelectorAll('table tbody tr');
+        let searchTimeout;
 
-            rows.forEach(row => {
-                const text = row.textContent.toLowerCase();
-                row.style.display = text.includes(query) ? '' : 'none';
-            });
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+
+            // Debounce search
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                const rows = document.querySelectorAll('table tbody tr');
+                let visibleCount = 0;
+
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    const isVisible = !query || text.includes(query);
+
+                    row.style.display = isVisible ? '' : 'none';
+                    if (isVisible) {
+                        visibleCount++;
+                        // Add highlight effect
+                        row.style.animation = 'fadeInScale 0.3s ease';
+                    }
+                });
+
+                // Update search results count
+                updateSearchResults(visibleCount, query);
+
+                // Scroll to database if searching
+                if (query && visibleCount > 0) {
+                    document.getElementById('database')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }, 300);
         });
+
+        // Add search suggestions
+        const suggestions = ['prompt injection', 'data poisoning', 'jailbreak', 'adversarial', 'backdoor'];
+        searchInput.addEventListener('focus', function() {
+            if (!this.value) {
+                this.placeholder = suggestions[Math.floor(Math.random() * suggestions.length)];
+            }
+        });
+    }
+
+    function updateSearchResults(count, query) {
+        let resultDiv = document.getElementById('search-results');
+        if (!resultDiv) {
+            resultDiv = document.createElement('div');
+            resultDiv.id = 'search-results';
+            resultDiv.style.cssText = `
+                text-align: center;
+                margin: 1rem 0;
+                padding: 0.5rem;
+                color: #6b7280;
+                font-size: 0.875rem;
+            `;
+            searchInput.parentNode.insertBefore(resultDiv, searchInput.nextSibling);
+        }
+
+        if (query) {
+            resultDiv.textContent = `Found ${count} attack${count !== 1 ? 's' : ''} matching "${query}"`;
+            resultDiv.style.display = 'block';
+        } else {
+            resultDiv.style.display = 'none';
+        }
     }
 
     // Add smooth scrolling to all links
@@ -321,4 +378,31 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.transition = 'opacity 0.5s ease';
         document.body.style.opacity = '1';
     }, 100);
+
+    // Add loading animation for cards
+    const cards = document.querySelectorAll('div[style*="border-left: 4px solid"]');
+    cards.forEach((card, index) => {
+        card.style.animation = `slideInUp 0.6s ease ${index * 0.1}s both`;
+    });
+
+    // Add pulse animation to critical stats
+    const criticalStats = document.querySelectorAll('div[style*="color: #ef4444"]');
+    criticalStats.forEach(stat => {
+        stat.style.animation = 'pulse 2s infinite';
+    });
+
+    // Enhanced hover effects for risk level badges
+    const riskBadges = document.querySelectorAll('td:nth-child(4)');
+    riskBadges.forEach(badge => {
+        const text = badge.textContent.trim();
+        if (text === 'Critical') {
+            badge.style.cssText += 'background: #fee2e2; color: #dc2626; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600;';
+        } else if (text === 'High') {
+            badge.style.cssText += 'background: #fed7aa; color: #ea580c; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600;';
+        } else if (text === 'Medium') {
+            badge.style.cssText += 'background: #fef3c7; color: #d97706; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600;';
+        } else if (text === 'Low') {
+            badge.style.cssText += 'background: #dcfce7; color: #16a34a; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600;';
+        }
+    });
 });

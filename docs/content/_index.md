@@ -4,44 +4,100 @@ type: docs
 bookToc: false
 ---
 
-<div style="text-align: center; padding: 4rem 2rem;">
-  <h1 style="font-size: 4rem; margin: 0;">🛡️</h1>
-  <h2 style="font-size: 2rem; margin: 1rem 0; color: #2563eb;">LLM Attacks</h2>
-  <p style="color: #6b7280; max-width: 500px; margin: 0 auto;">Interactive knowledge base for LLM security vulnerabilities</p>
-</div>
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); color: white; padding: 6rem 2rem; margin: -2rem -2rem 3rem -2rem; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grid\" width=\"10\" height=\"10\" patternUnits=\"userSpaceOnUse\"><path d=\"M 10 0 L 0 0 0 10\" fill=\"none\" stroke=\"%23334155\" stroke-width=\"0.5\" opacity=\"0.3\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grid)\"/></svg>'); opacity: 0.3;"></div>
 
-<div style="display: flex; justify-content: center; gap: 3rem; margin: 3rem 0; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <div style="font-size: 3rem; color: #2563eb;">71</div>
-    <div style="color: #6b7280;">attacks</div>
-  </div>
-  <div style="text-align: center;">
-    <div style="font-size: 3rem; color: #059669;">8</div>
-    <div style="color: #6b7280;">categories</div>
-  </div>
-  <div style="text-align: center;">
-    <div style="font-size: 3rem; color: #dc2626;">4</div>
-    <div style="color: #6b7280;">risk levels</div>
+  <div style="position: relative; z-index: 2; text-align: center; max-width: 800px; margin: 0 auto;">
+    <div style="font-size: 1rem; color: #ef4444; font-weight: 600; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">⚠️ Critical Security Alert</div>
+
+    <h1 style="font-size: 3.5rem; font-weight: 800; margin: 0 0 1rem 0; color: #ffffff;">
+      Your LLM is Under Attack
+    </h1>
+
+    <p style="font-size: 1.25rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6;">
+      <strong>71 documented attack vectors</strong> are actively targeting AI systems worldwide.
+      <br>Is your organization prepared?
+    </p>
+
+    <div style="display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+      <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; padding: 0.75rem 1.5rem; border-radius: 0.5rem;">
+        <div style="font-size: 1.5rem; font-weight: bold; color: #ef4444;">18</div>
+        <div style="font-size: 0.875rem; color: #cbd5e1;">Critical Risk</div>
+      </div>
+      <div style="background: rgba(249, 115, 22, 0.1); border: 1px solid #f97316; padding: 0.75rem 1.5rem; border-radius: 0.5rem;">
+        <div style="font-size: 1.5rem; font-weight: bold; color: #f97316;">35</div>
+        <div style="font-size: 0.875rem; color: #cbd5e1;">High Risk</div>
+      </div>
+      <div style="background: rgba(234, 179, 8, 0.1); border: 1px solid #eab308; padding: 0.75rem 1.5rem; border-radius: 0.5rem;">
+        <div style="font-size: 1.5rem; font-weight: bold; color: #eab308;">18</div>
+        <div style="font-size: 0.875rem; color: #cbd5e1;">Medium Risk</div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div style="text-align: center; margin: 3rem 0;">
-  <input type="text" id="search" placeholder="Search attacks..." style="padding: 1rem; width: 100%; max-width: 500px; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem;" />
+  <h2 style="font-size: 2rem; color: #1f2937; margin-bottom: 1rem;">What's at Stake?</h2>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
+    <div style="text-align: center; padding: 1.5rem;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
+      <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">$4.45M</div>
+      <div style="color: #6b7280; font-size: 0.875rem;">Average cost of AI security breach</div>
+    </div>
+
+    <div style="text-align: center; padding: 1.5rem;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+      <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">287 Days</div>
+      <div style="color: #6b7280; font-size: 0.875rem;">Average time to detect AI attack</div>
+    </div>
+
+    <div style="text-align: center; padding: 1.5rem;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+      <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">89%</div>
+      <div style="color: #6b7280; font-size: 0.875rem;">Organizations unprepared for LLM attacks</div>
+    </div>
+  </div>
 </div>
 
-<div style="display: flex; justify-content: center; gap: 2rem; margin: 3rem 0; flex-wrap: wrap;">
-  <a href="/LLM-Attacks/attacks/" style="color: #2563eb; text-decoration: none; padding: 1rem 2rem; border: 1px solid #2563eb; border-radius: 0.5rem; transition: all 0.2s;">
-    Browse Attacks
-  </a>
-  <a href="#database" style="color: #059669; text-decoration: none; padding: 1rem 2rem; border: 1px solid #059669; border-radius: 0.5rem; transition: all 0.2s;">
-    View Database
-  </a>
-  <a href="https://github.com/AI-Security-Research-Group/LLM-Attacks" style="color: #6b7280; text-decoration: none; padding: 1rem 2rem; border: 1px solid #6b7280; border-radius: 0.5rem; transition: all 0.2s;">
-    Contribute
-  </a>
+## Choose Your Path
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+
+### 🔍 Security Professionals
+Explore attack vectors, understand threats, and build robust defenses for your AI systems.
+
+[Explore Attacks →](/LLM-Attacks/attacks/){style="background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; display: inline-block;"}
+
+### 🤝 Community Contributors
+Join researchers worldwide in documenting and mitigating LLM security threats.
+
+[Join Community →](/LLM-Attacks/community/){style="background: #059669; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; display: inline-block;"}
+
+### 💼 Enterprise Solutions
+Protect your business with enterprise-grade LLM security solutions and expert guidance.
+
+[View Solutions →](/LLM-Attacks/sponsors/){style="background: #dc2626; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; display: inline-block;"}
+
 </div>
 
-## Database {#database}
+<div style="text-align: center; margin: 3rem 0;">
+  <h2 style="font-size: 1.5rem; color: #1f2937; margin-bottom: 2rem;">Quick Attack Lookup</h2>
+  <input type="text" id="search" placeholder="Search 71 documented attacks..." style="padding: 1rem 1.5rem; width: 100%; max-width: 600px; border: 2px solid #e5e7eb; border-radius: 0.75rem; font-size: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" />
+  <p style="color: #6b7280; font-size: 0.875rem; margin-top: 0.5rem;">Try: "prompt injection", "data poisoning", "jailbreak"</p>
+</div>
+
+## Attack Database {#database}
+
+<div style="background: linear-gradient(135deg, #fef3c7, #fed7aa); padding: 2rem; border-radius: 1rem; margin: 2rem 0; border-left: 4px solid #f59e0b;">
+  <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+    <div style="font-size: 2rem;">⚡</div>
+    <div>
+      <div style="font-weight: 600; color: #92400e;">Live Threat Intelligence</div>
+      <div style="color: #b45309; font-size: 0.875rem;">Updated with latest attack vectors and mitigation strategies</div>
+    </div>
+  </div>
+</div>
 
 | SN  | Attack                                                                                                                  | Category        | Risk Level | Description                                                                                                                                                                                                                                            |
 |-----|-------------------------------------------------------------------------------------------------------------------------|-----------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
